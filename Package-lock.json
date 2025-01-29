@@ -1,3 +1,321 @@
-git add package-lock.json  # or yarn.lock
-git commit -m "Add lock file"
-git push origin main  # Replace 'main' with your branch name if needed
+{
+  "name": "shree-bhairab-band-website",
+  "version": "0.1.0",
+  "lockfileVersion": 3,
+  "requires": true,
+  "packages": {
+    "": {
+      "name": "shree-bhairab-band-website",
+      "version": "0.1.0",
+      "dependencies": {
+        "@types/node": "20.3.1",
+        "@types/react": "18.2.12",
+        "@types/react-dom": "18.2.5",
+        "autoprefixer": "10.4.14",
+        "eslint": "8.42.0",
+        "eslint-config-next": "13.4.5",
+        "lucide-react": "^0.244.0",
+        "next": "13.4.5",
+        "postcss": "8.4.24",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "tailwindcss": "3.3.2",
+        "typescript": "5.1.3"
+      }
+    },
+    "node_modules/@types/node": {
+      "version": "20.3.1",
+      "resolved": "https://registry.npmjs.org/@types/node/-/node-20.3.1.tgz",
+      "integrity": "sha512-EhcH/wvidPy1WeML3TtYFGR83UzjxeWRen9V402T8aUGYsCHOmfoisV3ZSg03gAFIbLq8TnWOJ0f4cALtnSEUg=="
+    },
+    "node_modules/@types/react": {
+      "version": "18.2.12",
+      "resolved": "https://registry.npmjs.org/@types/react/-/react-18.2.12.tgz",
+      "integrity": "sha512-ndmBMLCgn38v3SntMeoJaIrO6tGHYKMEBohCUmw8HoLLQdRMOIGXfeYaBTLe2lsFaSB3MOK1VXscYFnmLtTSmw==",
+      "dependencies": {
+        "@types/prop-types": "*",
+        "@types/scheduler": "*",
+        "csstype": "^3.0.2"
+      }
+    },
+    "node_modules/@types/react-dom": {
+      "version": "18.2.5",
+      "resolved": "https://registry.npmjs.org/@types/react-dom/-/react-dom-18.2.5.tgz",
+      "integrity": "sha512-sRQsOS/sCLnpQhR4DSKGTtWFE3FZjZWkki1VAwTRFKLlYMHjmAfM+Ry0P4GNEizyDXdYbDQ4UitGCD0BIwpZoA==",
+      "dependencies": {
+        "@types/react": "*"
+      }
+    },
+    "node_modules/autoprefixer": {
+      "version": "10.4.14",
+      "resolved": "https://registry.npmjs.org/autoprefixer/-/autoprefixer-10.4.14.tgz",
+      "integrity": "sha512-FQzyfOsTlwVzjHxKEqRIAdJx9niO6VCBCoEwax/VLSoQF5pq8SqYUGgsi7UF/U8vZR3wehpV/IlluVtHGllJfw==",
+      "funding": [
+        {
+          "type": "opencollective",
+          "url": "https://opencollective.com/postcss/"
+        },
+        {
+          "type": "tidelift",
+          "url": "https://tidelift.com/funding/github/npm/autoprefixer"
+        }
+      ],
+      "dependencies": {
+        "browserslist": "^4.21.5",
+        "caniuse-lite": "^1.0.30001464",
+        "fraction.js": "^4.2.0",
+        "normalize-range": "^0.1.2",
+        "picocolors": "^1.0.0",
+        "postcss-value-parser": "^4.2.0"
+      },
+      "bin": {
+        "autoprefixer": "bin/autoprefixer"
+      },
+      "engines": {
+        "node": "^10 || ^12 || >=14"
+      },
+      "peerDependencies": {
+        "postcss": "^8.1.0"
+      }
+    },
+    "node_modules/eslint": {
+      "version": "8.42.0",
+      "resolved": "https://registry.npmjs.org/eslint/-/eslint-8.42.0.tgz",
+      "integrity": "sha512-ulg9Ms6E1WPf67PHaEY4/6E2tEn5/f7FXGzr3t9cBMugOmf1INYvuUwwh1aXQN4MfJ6a5K2iNwP3w4AColvI9A==",
+      "dependencies": {
+        "@eslint/eslintrc": "^2.0.3",
+        "@eslint/js": "8.42.0",
+        "@humanwhocodes/config-array": "^0.11.10",
+        "@humanwhocodes/module-importer": "^1.0.1",
+        "@nodelib/fs.walk": "^1.2.8",
+        "ajv": "^6.10.0",
+        "chalk": "^4.0.0",
+        "cross-spawn": "^7.0.2",
+        "debug": "^4.3.2",
+        "doctrine": "^3.0.0",
+        "escape-string-regexp": "^4.0.0",
+        "eslint-scope": "^7.2.0",
+        "eslint-utils": "^3.0.0",
+        "eslint-visitor-keys": "^3.4.1",
+        "espree": "^9.5.2",
+        "esquery": "^1.4.2",
+        "esutils": "^2.0.2",
+        "fast-deep-equal": "^3.1.3",
+        "file-entry-cache": "^6.0.1",
+        "find-up": "^5.0.0",
+        "glob-parent": "^6.0.2",
+        "globals": "^13.19.0",
+        "grapheme-splitter": "^1.0.4",
+        "ignore": "^5.2.0",
+        "import-fresh": "^3.0.0",
+        "imurmurhash": "^0.1.4",
+        "is-glob": "^4.0.0",
+        "is-path-inside": "^3.0.3",
+        "js-yaml": "^4.1.0",
+        "json-stable-stringify-without-jsonify": "^1.0.1",
+        "levn": "^0.4.1",
+        "lodash.merge": "^4.6.2",
+        "minimatch": "^3.1.2",
+        "natural-compare": "^1.4.0",
+        "optionator": "^0.9.1",
+        "strip-ansi": "^6.0.1",
+        "strip-json-comments": "^3.1.0",
+        "text-table": "^0.2.0"
+      },
+      "bin": {
+        "eslint": "bin/eslint.js"
+      },
+      "engines": {
+        "node": "^12.22.0 || ^14.17.0 || >=16.0.0"
+      },
+      "funding": {
+        "url": "https://opencollective.com/eslint"
+      }
+    },
+    "node_modules/eslint-config-next": {
+      "version": "13.4.5",
+      "resolved": "https://registry.npmjs.org/eslint-config-next/-/eslint-config-next-13.4.5.tgz",
+      "integrity": "sha512-Lj/3HrLnMBYjpGVy+4nMrQy5XBFjzTTXQdQvWBtE6lTBmu9GDYjwXzZBTpOUbH2+1ZLrE3vDDcyuXQvQrYDJLIg==",
+      "dependencies": {
+        "@next/eslint-plugin-next": "13.4.5",
+        "@rushstack/eslint-patch": "^1.1.3",
+        "@typescript-eslint/parser": "^5.42.0",
+        "eslint-import-resolver-node": "^0.3.6",
+        "eslint-import-resolver-typescript": "^3.5.2",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-jsx-a11y": "^6.5.1",
+        "eslint-plugin-react": "^7.31.7",
+        "eslint-plugin-react-hooks": "^4.5.0"
+      },
+      "peerDependencies": {
+        "eslint": "^7.23.0 || ^8.0.0",
+        "typescript": ">=3.3.1"
+      },
+      "peerDependenciesMeta": {
+        "typescript": {
+          "optional": true
+        }
+      }
+    },
+    "node_modules/lucide-react": {
+      "version": "0.244.0",
+      "resolved": "https://registry.npmjs.org/lucide-react/-/lucide-react-0.244.0.tgz",
+      "integrity": "sha512-XlYIkjRyH0xZQI9xmTnPuPBJpRZmDHhNTCXBPTYZRwjjmHXQZjnXcVGjJFCLBnRyZt3Zzz/Aq+Yz0VHjhNQ4J+9A==",
+      "peerDependencies": {
+        "react": "^16.5.1 || ^17.0.0 || ^18.0.0"
+      }
+    },
+    "node_modules/next": {
+      "version": "13.4.5",
+      "resolved": "https://registry.npmjs.org/next/-/next-13.4.5.tgz",
+      "integrity": "sha512-pfNsRLVM9e5Y1/z02VakJRfD6hMQkr24FaN2xc9GbcZDBxoOgiNAViSg5cXwlWCoMhtm4U315D7XYhgOr96Q3Q==",
+      "dependencies": {
+        "@next/env": "13.4.5",
+        "@swc/helpers": "0.5.1",
+        "busboy": "1.6.0",
+        "caniuse-lite": "^1.0.30001406",
+        "postcss": "8.4.14",
+        "styled-jsx": "5.1.1",
+        "watchpack": "2.4.0",
+        "zod": "3.21.4"
+      },
+      "bin": {
+        "next": "dist/bin/next"
+      },
+      "engines": {
+        "node": ">=16.8.0"
+      },
+      "optionalDependencies": {
+        "@next/swc-darwin-arm64": "13.4.5",
+        "@next/swc-darwin-x64": "13.4.5",
+        "@next/swc-linux-arm64-gnu": "13.4.5",
+        "@next/swc-linux-arm64-musl": "13.4.5",
+        "@next/swc-linux-x64-gnu": "13.4.5",
+        "@next/swc-linux-x64-musl": "13.4.5",
+        "@next/swc-win32-arm64-msvc": "13.4.5",
+        "@next/swc-win32-ia32-msvc": "13.4.5",
+        "@next/swc-win32-x64-msvc": "13.4.5"
+      },
+      "peerDependencies": {
+        "@opentelemetry/api": "^1.1.0",
+        "fibers": ">= 3.1.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "sass": "^1.3.0"
+      },
+      "peerDependenciesMeta": {
+        "@opentelemetry/api": {
+          "optional": true
+        },
+        "fibers": {
+          "optional": true
+        },
+        "sass": {
+          "optional": true
+        }
+      }
+    },
+    "node_modules/postcss": {
+      "version": "8.4.24",
+      "resolved": "https://registry.npmjs.org/postcss/-/postcss-8.4.24.tgz",
+      "integrity": "sha512-M0RzbcI0sO/XJNucsGjvWU9ERWxb/ytp1w6dKtxTKgixdtQDq4rmx/g8W1hnaheq9jgwL/oyEdH5Bc4WwJKMqg==",
+      "funding": [
+        {
+          "type": "opencollective",
+          "url": "https://opencollective.com/postcss/"
+        },
+        {
+          "type": "tidelift",
+          "url": "https://tidelift.com/funding/github/npm/postcss"
+        },
+        {
+          "type": "github",
+          "url": "https://github.com/sponsors/ai"
+        }
+      ],
+      "dependencies": {
+        "nanoid": "^3.3.6",
+        "picocolors": "^1.0.0",
+        "source-map-js": "^1.0.2"
+      },
+      "engines": {
+        "node": "^10 || ^12 || >=14"
+      }
+    },
+    "node_modules/react": {
+      "version": "18.2.0",
+      "resolved": "https://registry.npmjs.org/react/-/react-18.2.0.tgz",
+      "integrity": "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==",
+      "dependencies": {
+        "loose-envify": "^1.1.0"
+      },
+      "engines": {
+        "node": ">=0.10.0"
+      }
+    },
+    "node_modules/react-dom": {
+      "version": "18.2.0",
+      "resolved": "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz",
+      "integrity": "sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==",
+      "dependencies": {
+        "loose-envify": "^1.1.0",
+        "scheduler": "^0.23.0"
+      },
+      "peerDependencies": {
+        "react": "^18.2.0"
+      }
+    },
+    "node_modules/tailwindcss": {
+      "version": "3.3.2",
+      "resolved": "https://registry.npmjs.org/tailwindcss/-/tailwindcss-3.3.2.tgz",
+      "integrity": "sha512-9jPkMiIBXvPc2KywkraqsUfbfj+dHDb+JPWtSJa9MLFdrPyazI7q6WX2sUrm7R9eVR7qqv3Pas7EvQFzxKnI6w==",
+      "dependencies": {
+        "arg": "^5.0.2",
+        "chokidar": "^3.5.3",
+        "color-name": "^1.1.4",
+        "didyoumean": "^1.2.2",
+        "dlv": "^1.1.3",
+        "fast-glob": "^3.2.12",
+        "glob-parent": "^6.0.2",
+        "is-glob": "^4.0.3",
+        "lilconfig": "^2.1.0",
+        "micromatch": "^4.0.5",
+        "normalize-path": "^3.0.0",
+        "object-hash": "^3.0.0",
+        "picocolors": "^1.0.0",
+        "postcss": "^8.0.9",
+        "postcss-import": "^14.1.0",
+        "postcss-js": "^4.0.0",
+        "postcss-load-config": "^3.1.4",
+        "postcss-nested": "6.0.0",
+        "postcss-selector-parser": "^6.0.11",
+        "postcss-value-parser": "^4.2.0",
+        "quick-lru": "^5.1.1",
+        "resolve": "^1.22.1"
+      },
+      "bin": {
+        "tailwind": "lib/cli.js",
+        "tailwindcss": "lib/cli.js"
+      },
+      "engines": {
+        "node": ">=12.13.0"
+      },
+      "peerDependencies": {
+        "postcss": "^8.0.9"
+      }
+    },
+    "node_modules/typescript": {
+      "version": "5.1.3",
+      "resolved": "https://registry.npmjs.org/typescript/-/typescript-5.1.3.tgz",
+      "integrity": "sha512-XH627E9vkeqhlZFQuL+UsyAXEnibT0kWR2FWONlr4sTjvxyJYnyefgrkyECLzM5NenmKzRAy2rR/OlYLA1HkZw==",
+      "bin": {
+        "tsc": "bin/tsc",
+        "tsserver": "bin/tsserver"
+      },
+      "engines": {
+        "node": ">=14.17"
+      }
+    }
+  }
+}
+
