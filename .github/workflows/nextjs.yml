@@ -11,12 +11,7 @@ on:
    
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-  npm install
-  yarn install
-  git add package-lock.json  # or yarn.lock
-git commit -m "Add lock file"
-git push origin main  # or your branch name
-
+ 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
@@ -57,10 +52,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: "npm"
-          always-auth: "false"
-          check-latest: "false"
-          token: "***"
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
@@ -68,6 +59,21 @@ jobs:
           # server side image optimization (https://nextjs.org/docs/api-reference/next/image#unoptimized).
           #
           # You may remove this line if you want to manage the configuration yourself.
+      - name: Cache Node.js modules
+        uses: actions/cache@v3
+        with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+      - name: Cache Yarn dependencies
+        uses: actions/cache@v3
+        with:
+        path: ~/.yarn
+        key: ${{ runner.os }}-yarn-${{ hashFiles('yarn.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-yarn-
+
           static_site_generator: next
       - name: Restore cache
         uses: actions/cache@v4
@@ -95,9 +101,6 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
-    node: v20.18.1
-  npm: 10.8.2
-  yarn: 1.22.22
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
